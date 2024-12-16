@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML List Demonstration</title>
+  </head>
+  <body>
+   <h2> <ul>Branches(UnOrdered List)</h2>
+    <li>CSE</li>
+    <li>IT</li>
+    <li>ECE</li></ul>
+    <h2>Courses(Ordered List)</h2><ol>
+    <li>B.Tech</li>
+    <li>M.Tech</li>
+    <li>B.Pharm</li></ol>
+    <h2>Nested List</h2>
+    <ul><li>II year</li>
+    <ul><li>Section A</li>
+    <li>Section B</li>
+    <li>Section C</li>
+    <li>Section D</li></ul></ul>
+    <ul><li>III year</li><ul><li>Section A</li>
+    <li>Section B</li>
+    <li>Section C</li></ul></ul>
+    <h2>Ordered list inside an unordered list</h2>
+    <ul><li>Programming Languages</li><ol><li>Python</li>
+    <li>Java</li>
+    <li>C</li></ol></ul>
+    <ul><li>Databases</li><ol><li>MySQL</li>
+    <li>PostgreSQL</li></ol></ul>
+    <h2>Definition List</h2>
+    <dl>
+      <dt>HTML</dt><dd>HyperText Markup Language - the standard markup language for creating web pages</dd>
+    </dl>
+    <dl><dt>CSS</dt><dd>Cascading Style Sheets - used for styling HTML elements.</dd></dl>
+  </body>
+</html>
