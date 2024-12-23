@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profiles </title>
+    
+    <style >
+      body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+      }
+      img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #007BFF;
+        }
+      .Profile {
+        display: inline-block;
+            margin: 20px;
+      }
+    
+       h1 {
+        text-align=center;
+        color=#FFF;
+      }
+      .Profile a {
+        display: block;
+        margin-bottom: 10px; /* Space between the link and the image */
+        font-size: 16px;
+        color: #007BFF;
+        text-decoration: none;
+      }
+      .Profile a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Profile Links</h1></div>
+ <div class="Profile"> <a href="https://www.google.co.in/" target="_blank">Your Profile</a>
+ <img src="file:///home/vitcse/Downloads/image.jpg" alt="your Profile"></div>
+  <div class="Profile"><a href="https://www.bing.com/"target="_blank">Your Friend's Profile</a>
+  <img src="file:///home/vitcse/Downloads/friend image.jpg" alt="Your Friend's"</div>
+  </body>
+</html>
