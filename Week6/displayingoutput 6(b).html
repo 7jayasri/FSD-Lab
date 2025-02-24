@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            padding:10px 20px;
+            background-color:#007bff;
+            cursor:pointer;
+            margin:10px;
+            
+        }
+        button:hover {
+            background-color:aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    <button onclick="show()">Show Alert</button>
+    <button onclick="doc()">Write to Document</button>
+    <button onclick="login()">Log to Console</button>
+    <button onclick="innerHtml()">Update inner HTML</button>
+    <p id="inner">This text is the line.</p></div>
+<script>
+    function show() {
+        alert("This is an alert box! ");
+
+    }
+    function doc() {
+        document.write("This text is written directly to the document.");
+    }
+    function login() {
+         console.log("This message is logged to the console.")
+    }
+    function innerHtml() {
+        document.getElementById("inner").innerHTML ="This text is updated using innerHTML."
+
+    }
+</script>
+</body>
+</html>
