@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larger Number Program</title>
+    <style>
+        body {
+            
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        button{
+            padding:10px 20px;
+            margin:10px;
+            border:none;
+            border-radius:5%;
+            background-color:  #007bff;
+            transition: transform 0.3s ease,transform 0.2s ease;
+            align-items: center;
+            justify-content: center;
+            color: #f9f9f9;
+        }
+        button:hover{
+            background-color:  #0056b3;
+            transform:scale(1.5)
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: gray;
+        }
+    </style>
+    <script type="text/javascript">
+        function findLargerNumber() {
+            // Ask the user to input three integers
+            let num1 = parseInt(prompt("Enter the first integer:"));
+            let num2 = parseInt(prompt("Enter the second integer:"));
+            let num3 = parseInt(prompt("Enter the third integer:"));
+            
+            // Compare the numbers and determine the output
+            if (num1 === num2 && num2 === num3) {
+                alert("EQUAL NUMBERS");
+            } else {
+                let largest = Math.max(num1, num2, num3);
+                alert(largest + " LARGER NUMBER");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Find the largest number</h1>
+    <button onclick="findLargerNumber()">Enter the Numbers</button>
+    <div id="message">Click the button to enter numbers.</div>
+</body>
+</html>
