@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Defined Object</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript User-Defined Object</h1>
+
+    <p id="output">Person Info will be displayed here.</p>
+
+    <button onclick="displayPerson()">Create &amp; Show Person</button>
+
+    <script>
+        // Constructor Function
+        function Person(firstName, lastName, age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+
+            // Method
+            this.displayInfo = function() {
+                return `Name: ${this.fullName} | Age: ${this.age}`;
+            };
+        }
+
+        // Adding Accessors (Getter & Setter)
+        Object.defineProperty(Person.prototype, "fullName", {
+            get: function() {
+                return this.firstName + " " + this.lastName;
+            },
+            set: function(value) {
+                let parts = value.split(" ");
+                this.firstName = parts[0];
+                this.lastName = parts[1];
+            }
+        });
+
+        function displayPerson() {
+            let person1 = new Person("John", "Doe", 25);
+            document.getElementById("output").innerText = person1.displayInfo();
+        }
+    </script>
+
+
+
+</body></html>
