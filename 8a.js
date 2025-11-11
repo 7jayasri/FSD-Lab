@@ -27,3 +27,39 @@ function App() {
 }
 
 export default App;
+
+
+
+//Home.js
+
+import React from "react";
+
+function Home() {
+  return <h3>Welcome to the Home Page</h3>;
+}
+
+export default Home;
+
+
+//About.js
+
+import React from "react";
+
+function About() {
+  return <h3>This is the About Page</h3>;
+}
+
+export default About;
+
+
+//Contact.js
+
+import React from "react";
+
+function Contact() {
+  return <h3>Contact us at: info@example.com</h3>;
+}
+
+export default Contact;
+
+
